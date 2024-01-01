@@ -99,7 +99,7 @@ COMMIT;
 
 
 -- [2] :- account holder same city   (surat)
-SELECT * FROM Account_holder WHERE city IN (SELECT city FROM AccountHolder GROUP BY city HAVING COUNT(*) > 1);
+SELECT * FROM Account_holder WHERE city IN (SELECT city FROM Account_holder GROUP BY city HAVING COUNT(*) > 1);
 
 
 
