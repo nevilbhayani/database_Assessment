@@ -116,7 +116,7 @@ SELECT branch_city, COUNT(*) AS Count_Branch FROM Bank GROUP BY branch_city;
 
 
 -- [5] :- display the account holder’s
-SELECT AH.account_holder_id, AH.account_holder_name, L.branch_id, L.loan_amount FROM Account_holder AH JOIN Loan L ON AH.account_holder_id = L.account_holder_id;
+SELECT account_holder_id, account_holder_name, branch_id, loan_amount FROM Account_holder  JOIN Loan  ON account_holder_id = account_holder_id;
 
 
 
